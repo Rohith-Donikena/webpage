@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ################################ header-styling ########################### */
+
+header {
+    height: 96vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../images/pexels-irina-iriser-1366957.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar .logo {
+    float: left;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 9rem;
+    font-weight: 500;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin-top: 2rem;
+}
+
+.navbar .nav-element {
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 10rem;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid rgb(226, 220, 220);
+}
+
+li,
+p {
+    font-size: 6rem;
+    letter-spacing: 0.13em;
+    margin-bottom: 0.5em;
+}
+
+h1,
+h1,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+
+/* ############################ header-content ########################### */
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+
+.header-content h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10rem;
+    margin-bottom: 5rem;
+}
+
+.header-content p {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+
+/* ################################ utility-classes ########################################## */
+
+.bg-dark {
+    background-color: #263238;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #f4f4f4;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-grey {
+    color: #555;
+}
+
+.container {
+    max-width: 3400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.button {
+    padding: 3rem;
+    font-size: 4rem;
+    margin-left: 1.6em;
+}
+
+.btn-primary {
+    background-color: white;
+    border-radius: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.btn-secondary {
+    border: 6px solid red;
+    border-radius: 100px;
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+.row .text-box a {
+    letter-spacing: 0.7rem;
+    font-size: 4.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.explore {
+    font-size: 6.5rem;
+    bo
+}
+
+
+/* ############################### showcase styling ############################ */
+
+.showcase {
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row {
+    height: 110rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 100px 4px #aaa;
+}
+
+.row1 {
+    margin-top: 20rem;
+    margin-bottom: 30rem;
+}
+
+.row2 {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    width: 50%;
+    float: left;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    width: 50%;
+    float: right;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    height: 100%;
+}
+
+.row .img-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.row .text-box h2 {
+    font-size: 10rem;
+    letter-spacing: 1.5rem;
+    word-spacing: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 5rem;
+}
+
+.row .text-box p {
+    padding: 5rem;
+    margin-bottom: 1.6em;
+    letter-spacing: 1.1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+/* ################################# footer #################################### */
+
+.box-wrapping {
+    height: 84.5rem;
+    margin-top: 30em;
+    margin-bottom: 40em;
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.335);
+}
+
+.box-wrappings::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.box-wrapping .box1 {
+    width: 33.34%;
+    float: right;
+    padding: 13rem;
+    background-color: #263238;
+    color: #fff;
+}
+
+.box-wrapping .box2 {
+    width: 33.33%;
+    float: right;
+    padding: 13rem;
+    background-image: linear-gradient( 111.2deg, rgba(232, 5, 5, 1) 1.7%, rgba(245, 49, 191, 1) 98.7%);
+    color: #fff;
+}
+
+.box-wrapping .box3 {
+    width: 33.33%;
+    float: right;
+    padding: 13rem;
+    background-color: #263238;
+    color: #fff;
+}
+
+.features .box-wrapping h2 {
+    font-size: 6.5rem;
+    letter-spacing: 1rem;
+    word-spacing: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 2rem 5rem 5rem 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.features .box-wrapping .box-content {
+    font-size: 5rem;
+    padding: 3rem;
+    margin-bottom: 4rem;
+}
+
+
+/* ################################### footer ###################################### */
+
+footer .end {
+    background-color: #333;
+    width: 100%;
+    height: 30rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer .end .a {
+    padding: 20px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+footer .txt {
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+
+/* ############################ About page  ################################## */
+
+.about {
+    padding: 20rem 0rem;
+}
+
+.about .font-size {
+    font-size: 10rem;
+}
+
+.about h1 {
+    border-bottom: 12px solid #e63946;
+}
+
+.about p {
+    margin-top: 0.8em;
+}
+
+.features {
+    margin-top: 10em;
+}
+
+.features ul li {
+    font-size: 5rem;
+}
+
+.about .features .list1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.about .features .list2 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.about .features .list1 ::before {
+    content: "\2713";
+    color: #e63946;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.about .features .list2 ::before {
+    content: "\2713";
+    color: #e63946;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.about .features::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ############################################ count-item ###################################### */
+
+section span {
+    font-size: 10rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+section .count {
+    margin-top: 20em;
+}
+
+section .count p {
+    font-size: 5.3rem;
+    font-weight: 700;
+    color: #555;
+}
+
+section .count .count-item1 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+section .count .count-item2 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+section .count .count-item3 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+section .count .count-item4 {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+section .count::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ###################################### LAST BAR ################################ */
+
+.lastbar {
+    margin-top: 8em;
+    background-image: linear-gradient( 111.2deg, rgba(232, 5, 5, 1) 1.7%, rgba(245, 49, 191, 1) 98.7%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.246);
+}
+
+.lastbar .lastbox p {
+    padding: 3rem;
+    color: #f4f4f4;
+    margin-bottom: 4.5rem;
+    margin-left: 13rem;
+}
+
+.lastbar .lastbox .bar-left {
+    width: 60%;
+    float: left;
+}
+
+.lastbar .lastbox a {
+    color: #f4f4f4;
+    font-size: 9rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.lastbar .lastbox .contact-btn {
+    margin-top: 4rem;
+    margin-left: 25rem;
+    padding: 20px 10rem;
+    display: inline-block;
+    border: 5px solid #f4f4f4;
+    letter-spacing: 0.6rem;
+}
+
+.lastbar .lastbox a .bar-right {
+    width: 40%;
+    float: right;
+}
+
+.lastbar::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/* ########################## Contact form ################################# */
+
+.contact-form {
+    margin-top: 20rem;
+    background-color;
+}
+
+.form-wrapper .company-address {
+    width: 49%;
+    float: left;
+    font-size: 10rem;
+    background-color: #fff;
+    height: 202.3rem;
+}
+
+.form-wrapper .company-address img {
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+    margin-top: 18.5rem;
+}
+
+.form-wrapper .form {
+    width: 49%;
+    float: right;
+    font-size: 10rem;
+    background-color: #fff;
+    height: 202.3rem;
+}
+
+.form-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address h2 {
+    font-weight: 400;
+    color: #555;
+    font-size: 6rem;
+    padding: 0px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.form-wrapper .company-address p {
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.form-wrapper .company-address i {
+    padding-left: 7rem;
+    font-size: 7.4rem;
+    display: inline-block;
+}
+
+
+/* ################################### Form styling ######################################### */
+
+.form-wrapper form h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    margin-top: 4rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    color: #e63946;
+}
+
+.form-wrapper form .contact h1::after {
+    content: "";
+    display: block;
+    border-bottom: 12px solid #e63946;
+    width: 100%;
+}
+
+.form-wrapper form p {
+    margin-left: 2rem;
+    padding: 0rem 4rem;
+    font-size: 6rem;
+    margin-bottom: 6rem;
+}
+
+.form-wrapper form .form-group {
+    font-size: 5rem;
+    padding-left: 5rem;
+    margin-bottom: 4rem;
+}
+
+.form-wrapper form .form-group label {
+    display: block;
+}
+
+.form-wrapper form .form-group input {
+    width: 96%;
+    height: 8rem;
+    margin-top: 3rem;
+}
+
+.form-wrapper form .message input {
+    width: 96%;
+    height: 66rem;
+}
+
+.form-wrapper form .form-button {
+    margin-top: 2rem;
+    font-size: 6rem;
+    padding: 2rem;
+    background-color: #e63946;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    padding: 1.8rem 9rem;
+    margin-left: 56rem;
+    cursor: pointer;
+}
